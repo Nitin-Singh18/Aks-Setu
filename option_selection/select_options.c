@@ -4,6 +4,12 @@ int chooseOption() {
 
     int selectedOption;
 
+    printf("There are tools for encrypting/decrypting your text\n1. Ascii Code\n2. Atbash Code\n3. Binary code\n4. Caser Cipher Code\n5. D-code\n6. Prime code\n7. Reverse code\n8. Roman Code\n9. Symbol code");
+
+    delay(1);
+
+    printf("\n\nPlease select any one of type in Numerical:");
+
     scanf("%d", &selectedOption);
 
     if(selectedOption == 1) {
@@ -45,6 +51,7 @@ int chooseOption() {
     }else {
 
         printf("\n\nPlease Enter Correct Keyword\n\n");
+        delay(1);
         chooseOption();
     }
 
