@@ -7,11 +7,14 @@
 
 int main() {
     
-    int options, encrypt_decrypt;
+    int options, encrypt_decrypt, isDone = 0;
 
-    showWelcomeMessage();
+    if(isDone == 0) {
+        showWelcomeMessage();
+        isDone = 1;
+    }
 
-    options = chooseOption(options);
+    options = chooseOption();
 
     delay(1);
 
@@ -21,7 +24,9 @@ int main() {
 
     checkCodeEntered(options, encrypt_decrypt);
 
-    delay(20);
+    delay(2);
+
+    main();
 
     return 0;
 }
