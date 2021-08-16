@@ -1,9 +1,11 @@
 #include<stdio.h>
 
-int main()
+void caeserCipherDecryption()
 {
-    char plain_text[100], ch;
+    char plain_text[100], ch, escape;
     int i, shift;
+
+    scanf("%c", &escape);
 
     printf("\nEnter the text to decrypt: ");
     gets(plain_text);
@@ -11,7 +13,7 @@ int main()
     printf("\nEnter the shift value: ");
     scanf("%d", &shift);
 
-    for (i=0; plain_text[i] != '\0'; ++i)       /* Run this loop until the array gets empty*/
+    for (i = 0; plain_text[i] != '\0'; ++i)       // Run this loop until the array gets empty
     {
        ch = plain_text[i];
 
@@ -41,5 +43,4 @@ int main()
     }
 
     printf("\nDecrypted text is: %s", plain_text);
-    return 0;
 }

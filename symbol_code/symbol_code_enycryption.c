@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "../timer/timer_delay.c"
 
-int main() {
+
+void symbolCodeEncryption() {
 
     char encryptValue[27] = {'`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '|', '/', ',', '.', '<', '>', '?', '*', '{', '}', '[', ']'};
 
     char alphabetValue[27] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' '};
 
-    printf("Array : %s", encryptValue);
+    char string[100], encryptedString[100], chr, escape;
 
-    char string[100], encryptedString[100], chr;
+    scanf("%c", &escape);
 
     printf("\n\nEnter Your Text : ");
 
@@ -33,8 +33,4 @@ int main() {
 
      printf("\n\nEncrypted String : %s", encryptedString);
     
-    delay(1000);
-
-    return 0;
-
 }

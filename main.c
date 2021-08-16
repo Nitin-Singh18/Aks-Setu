@@ -23,7 +23,5 @@ int main() {
 
     delay(20);
 
-    
-
     return 0;
 }

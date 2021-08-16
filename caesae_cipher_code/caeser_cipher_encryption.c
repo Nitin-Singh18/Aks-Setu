@@ -1,9 +1,11 @@
 #include<stdio.h>
 
-int main()
+void caeserCipherEncription()
 {
-    char plain_text[100], ch;
+    char plain_text[100], ch, escape;
     int i, shift;
+
+    scanf("%c", &escape);
 
     printf("\nEnter the text: ");
     gets(plain_text);
@@ -41,5 +43,5 @@ int main()
     }
 
     printf("\nEncrypted text is: %s", plain_text);
-    return 0;
+  
 }
