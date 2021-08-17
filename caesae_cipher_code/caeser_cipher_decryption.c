@@ -13,7 +13,7 @@ void caeserCipherDecryption()
     printf("\nEnter the shift value: ");
     scanf("%d", &shift);
 
-    for (i = 0; plain_text[i] != '\0'; ++i)       // Run this loop until the array gets empty
+    for (i = 0; plain_text[i] != '\0'; ++i)      // Run this loop until the array gets empty
     {
        ch = plain_text[i];
 
@@ -42,5 +42,6 @@ void caeserCipherDecryption()
         
     }
 
-    printf("\nDecrypted text is: %s", plain_text);
+    printf("\nDecrypted Text: %s", plain_text);
+    return 0;
 }
