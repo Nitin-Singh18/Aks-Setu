@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-void symbolCodeEncryption() {
+void DcodeEncryption() {
 
     char encryptValue[28][2] = {"1#", "2#", "3#", "4#", "1;", "2;", "3;", "4;", "1?", "2?", "3?", "4?", "1:", "2:", "3:", "4:", "1*", "2*", "3*", "4*", "1<", "2<", "3<", "4<", "1}", "2{", "  ", "4{"};
 
@@ -60,7 +60,7 @@ void symbolCodeEncryption() {
 
 int main() 
 {
-    symbolCodeEncryption();
+    DcodeEncryption();
     return 0;
 
 }

@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-void symbolCodeEncryption() {
+void PrimeCodeEncryption() {
   
     char encryptValue[28][4] = {" 193", " 197", " 199", " 211", " 223", " 227", " 229", " 233", " 379", " 383", " 509", " 521", " 401", " 409", " 419", " 683", " 691", " 701", " 709", " 719", " 881", " 883", " 887", " 907", " 911", " 919", " 929", " 359"};
 
@@ -70,7 +70,7 @@ void symbolCodeEncryption() {
 
 int main() 
 {
-    symbolCodeEncryption();
+    PrimeCodeEncryption();
     return 0;
 
 }
