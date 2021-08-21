@@ -2,28 +2,35 @@
 
 int main()
 {
-    char plain_text[100] = {0};
-    int i, j, k;
+    char plain_Text[100] = {0};             //Array declaration for text
 
-    printf("Enter the text for encryption\n");
+    int i, j, k;                            //Declaration of variables
 
-    gets(plain_text);
+    printf("\nEnter text for encryption: ");
 
-    for(i = 0; plain_text[i] != '\0'; i++)
+    gets(plain_Text);
+
+    printf("\nEncrypted text: ");
+
+    for(i = 0; plain_Text[i] != '\0'; i++)  //Loop for printing binary code for plain text
     {
         for(j = 7; j >= 0; j--)
         {
-            k = plain_text[i] >> j;
+            k = plain_Text[i] >> j;         //>> -> is / and right shift operator
 
-            if(k & 1)
+            if(k & 1)                       //& -> %
             {
                 printf("1");
             }
-            else{
+            else
+            {
                 printf("0");
             }
+
         }
-        printf(" ");
+
+        printf(" ");                        //To get space b/w binary codes for each character
     }
+
     return 0;
 }

@@ -3,7 +3,7 @@
 
 int main()
 {
-    char string[100] = {0}, decrypted_text[100] = {0}, ch;
+    char encrypted_Text[100] = {0}, decrypted_Text[100] = {0}, ch;   //Declaration
     
     char small_letter[27] = {'z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a', ' '};
 
@@ -13,39 +13,42 @@ int main()
     
     char capital_encrypt_letter[27] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ' '};
     
-    printf("\n\nEnter Your Text : ");
+    char symbol[27] = {'`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '|', '/', ',', '.', '<', '>', '?', '*', '{', '}', '[', ']'};
 
-    gets(string);
+    printf("\nEnter encrypted text: ");
 
-    for (int i = 0; string[i] != '\0'; ++i)
+    gets(encrypted_Text);
+
+    for (int i = 0; encrypted_Text[i] != '\0'; ++i)       //Loop for text input
     {
-        ch = string[i];
+        ch = encrypted_Text[i];
 
-        for (int j = 0; j < 27; j++)
+        for (int j = 0; j < 27; j++)                      //Loop for Checking conditions
         {
             if(ch == small_letter[j]) 
             {
 
-                decrypted_text[i] = small_encrypt_letter[j];
+                decrypted_Text[i] = small_encrypt_letter[j];
 
             }
             
             if (ch == capital_letter[j] )
             {
                
-               decrypted_text[i] = capital_encrypt_letter[j];
+               decrypted_Text[i] = capital_encrypt_letter[j];
 
             }
             
-            // if (ch != small_letter[j] && ch != capital_letter[j]   )
-            // {
-            //     decrypted_text[i] = ch;
-            // }
+            else if (ch == symbol[j])
+            {
+                decrypted_Text[i] = symbol[j];
+            }
             
         }
         
     }
 
-    printf("\n\nDecrypted Text : %s", decrypted_text);
+    printf("\nDecrypted Text: %s", decrypted_Text);
+    
     return 0;
 }

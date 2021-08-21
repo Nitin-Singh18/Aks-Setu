@@ -3,14 +3,17 @@
 void caeserCipherEncription()
 {
     char plain_text[100], ch, escape;
+    
     int i, shift;
 
     scanf("%c", &escape);
 
-    printf("\nEnter the text: ");
+    printf("\nEnter text for encryption: ");
+    
     gets(plain_text);
 
     printf("\nEnter the shift value: ");
+    
     scanf("%d", &shift);
 
     for (i=0; plain_text[i] != '\0'; ++i)       /* Run this loop until the array gets empty*/
@@ -43,5 +46,6 @@ void caeserCipherEncription()
     }
 
     printf("\nEncrypted text is: %s", plain_text);
-  
+    
+    return 0;
 }

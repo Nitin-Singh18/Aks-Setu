@@ -2,28 +2,31 @@
 
 int main()
 {
-    int text[100]={0}; //= {105,106,107};
-    char a = '@';
-    int i; //times;
-    //times = 3;
-    
-    
-    printf("Enter the text for encryption: ");
-    
-    for(i = 0; i<100; ++i) //times, 100, count, providing direct value removes the error
-    {
-        scanf("%d", &text[i]);
+    int ascii_Val[100]={0};   //Array for ascii value
 
-        if(text[i]==a)
+    char a = 's', b = 'S';    //Taken to break the loop
+
+    int i; 
+    
+    printf("Enter ascii value for decryption: ");
+    
+    for(i = 0; i < 100; ++i)                     //Loop for input of ascii values
+    {
+        scanf("%d", &ascii_Val[i]);
+
+        if(ascii_Val[i]==a || ascii_Val[i]==b)   // To break the loop when want
         {
             break;
         }
     }
     
-    
-    for(i=0; text[i] != '\0'; ++i)
+    printf("Decrypted values: ");
+
+    for(i = 0; ascii_Val[i] != '\0'; ++i)
     {
-        printf("%c", text[i]);
+        printf("%c", ascii_Val[i]);
     }
-        return 0;
+    
+    return 0;
+
 }

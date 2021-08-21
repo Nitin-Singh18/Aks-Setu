@@ -2,13 +2,15 @@
 
 int main()
 {
-    char plain_text[100];
+    char plain_text[150];
 
     int i;
     
-    printf("Enter the text for encryption: ");
+    printf("Enter text for encryption: ");
 
     gets(plain_text);
+
+    printf("Decrypted text: ");
 
     for(i=0; plain_text[i]!='\0'; ++i)
     {
