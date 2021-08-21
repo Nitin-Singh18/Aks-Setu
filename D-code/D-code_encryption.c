@@ -30,8 +30,8 @@ void DcodeEncryption() {
                 if(i < 1) 
                 {
                     char chr1,chr2;
-                    chr1 = encryptValue[0][0];
-	                chr2 = encryptValue[0][1];
+                    chr1 = encryptValue[j][0];
+	                chr2 = encryptValue[j][1];
 	  
                     dvar[0] = chr1;
                     dvar[1] = chr2;
