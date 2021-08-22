@@ -6,7 +6,7 @@ int main()
 {
     char plain_text[100];
 
-    printf("Enter the text for encryption: ");
+    printf("Enter text for encryption: ");
     
     gets(plain_text);
 

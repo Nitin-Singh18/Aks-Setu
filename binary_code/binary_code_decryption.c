@@ -3,43 +3,46 @@
 
 int main()
 {
-    int n[100] = {0}; 
-    int i, j = 0;
-    int sum = 0, bin;
-    // int decrypted_string[100] = {0};
-    char a = '@', k;
+    int binary_numbers[100] = {0};               //Array for binary numbers
+    
+    int i, j;                                    //Variable declared to run loops
+    
+    int sum = 0, bin_num;
+    
+    char a = 's', b = 'S', decrypted_Values;
 
-    printf("Emter the binary number");
+    printf("\nEmter binary number: ");
 
-    for(i = 0; i<100; ++i) 
+    for(i = 0; i < 100; ++i)                     //Loop for input of binary numbers
     {
-        scanf("%d", &n[i]);
-        if(n[i]==a)
+        scanf("%d", &binary_numbers[i]);
+        
+        if(binary_numbers[i] == a || binary_numbers[i] == b)  //Conditions to break the input loop
         {
             break;
         }
 
     }
     
+    printf("\nDecrypted values: ");
 
-    for(i=0 ; n[i] != '\0'; ++i)
-    {   bin = n[i];  //think of changing bin into char
+    for(i = 0 ; binary_numbers[i] != '\0'; ++i)               //Loop to get alphabets for each binary number 
+    {   
+        bin_num = binary_numbers[i];  
+        
         sum = 0;
-        for(j = 0; bin != '\0'; j++)
+        
+        for(j = 0; bin_num != '\0'; j++)
         {
-            sum = sum + pow(2,j) * (bin%10);
-            bin = bin/10;
+            sum = sum + pow(2,j) * (bin_num%10);
             
-            // printf("%d", sum);
+            bin_num = bin_num/10;
         }
-        // printf("%d", sum);
-        k = sum;
         
-        
-        // printf("%d", k);
-        printf("%c", k);
+        decrypted_Values = sum;
+
+        printf("%c", decrypted_Values);
     }
-    // printf("%d", s);
-    // printf("%d", decrypted_string);
+    
     return 0;
 }

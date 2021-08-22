@@ -4,15 +4,15 @@
 
 int main()
 {
-    char plain_text[100];
+    char encrypted_text[100];
 
-    printf("Enter the text for decryption: ");
+    printf("Enter text for decryption: ");
     
-    gets(plain_text);
+    gets(encrypted_text);
 
-    strrev(plain_text);
+    strrev(encrypted_text);
 
-    printf("\nDecrypted text: %s ", plain_text);
+    printf("\nDecrypted text: %s ", encrypted_text);
 
     return 0;
 }
