@@ -1,12 +1,14 @@
 #include<stdio.h>
 
-int main()
+void binaryCodeEncyption()
 {
-    char plain_Text[100] = {0};             //Array declaration for text
+    char plain_Text[100] = {0}, escape;             //Array declaration for text
 
     int i, j, k;                            //Declaration of variables
 
     printf("\nEnter text for encryption: ");
+
+    scanf("%c", &escape);
 
     gets(plain_Text);
 
@@ -32,5 +34,4 @@ int main()
         printf(" ");                        //To get space b/w binary codes for each character
     }
 
-    return 0;
 }

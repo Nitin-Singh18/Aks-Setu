@@ -55,10 +55,3 @@ void PrimeCodeDecryption()
 
     printf("\n\nEncrypted String : %s", dvar);
 }
-
-int main() 
-{
-    PrimeCodeDecryption();
-    return 0;
-
-}

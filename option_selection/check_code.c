@@ -3,6 +3,22 @@
 #include "../caesae_cipher_code/caeser_cipher_decryption.c"
 #include "../symbol_code/symbol_code_decryption.c"
 #include "../symbol_code/symbol_code_enycryption.c"
+#include "../atbash_code/atbash_code_decryption.c"
+#include "../atbash_code/atbash_code_encyption.c"
+#include "../ascii_code/ascii_code_decryption.c"
+#include "../ascii_code/ascii_code_encryption.c"
+#include "../binary_code/binary_code_decryption.c"
+#include "../binary_code/binary_code_encryption.c"
+#include "../D-code/D-code_encryption.c"
+#include "../D-code/D-code_decryption.c"
+#include "../prime_code/prime_code_decryption.c"
+#include "../prime_code/prime_code_enncryption.c"
+#include "../reverse_code/reverse_code_encryption.c"
+#include "../reverse_code/reverse_code_decryption.c"
+#include "../roman_no/roman_no_decryption.c"
+#include "../roman_no/roman_no_encryption.c"
+
+
 
 void checkCodeEntered(int selectedOption, int toolType) {
 
@@ -13,9 +29,11 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
-
+            asciiCodeEncryption();
 
         }else {
+
+            asciiCodeDecryption();
 
         }
 
@@ -25,8 +43,12 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            atbashEncryptionFunction();
+
         }else {
             
+            atbashDecryptionFunction();
+
         }
 
     }else if(selectedOption == 3) {
@@ -35,7 +57,11 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            binaryCodeEncyption();
+
         }else {
+
+            binaryCodeDecryption();
             
         }
 
@@ -59,8 +85,12 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            DcodeEncryption();
+
         }else {
             
+            DcodeEncryption();
+
         }
         
     }else if(selectedOption == 6) {
@@ -69,7 +99,11 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            PrimeCodeEncryption();
+
         }else {
+
+            PrimeCodeDecryption();
             
         }
 
@@ -79,7 +113,11 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            reverseCodeEncryption();
+
         }else {
+
+            reverseCodeDecryption();
             
         }
 
@@ -89,7 +127,11 @@ void checkCodeEntered(int selectedOption, int toolType) {
 
         if(toolType == 1) {
 
+            RomanCodeEncryption();
+
         }else {
+
+            RomanCodeDecryption();
             
         }
 
@@ -110,6 +152,8 @@ void checkCodeEntered(int selectedOption, int toolType) {
     }else {
 
         printf("\n\nPlease Enter Correct Keyword\n\n");
+
+        checkCodeEntered(selectedOption, toolType);
 
     }
 

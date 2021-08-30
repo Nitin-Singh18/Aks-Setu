@@ -3,15 +3,21 @@
 #include "option_selection/select_options.c"
 #include "option_selection/select_encypt_decrypt.c"
 #include "option_selection/check_code.c"
-//#include "timer/timer_delay.c"
+
+int isDone = 0;
 
 int main() {
     
-    int options, encrypt_decrypt, isDone = 0;
+    int options, encrypt_decrypt;
+    char tryAgain;
 
     if(isDone == 0) {
         showWelcomeMessage();
         isDone = 1;
+
+        
+    }else{
+        printf("\n\n\n\n\n");
     }
 
     options = chooseOption();
@@ -26,7 +32,16 @@ int main() {
 
     delay(2);
 
-    main();
+    printf("\n\n\nWant to try more encryption methods, reply with y or n : ");
+
+    scanf("%c", &tryAgain);
+
+    if(tryAgain == 'y') {
+        delay(1);
+        main();
+    }else{
+        isDone = 0;
+    }
 
     return 0;
 }

@@ -58,9 +58,3 @@ void DcodeEncryption() {
     
 }
 
-int main() 
-{
-    DcodeEncryption();
-    return 0;
-
-}

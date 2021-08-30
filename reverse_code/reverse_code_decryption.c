@@ -2,11 +2,13 @@
 #include<string.h>
 
 
-int main()
+void reverseCodeDecryption()
 {
-    char encrypted_text[100];
+    char encrypted_text[100], escape;
 
     printf("Enter text for decryption: ");
+
+    scanf("%c", &escape);
     
     gets(encrypted_text);
 
@@ -14,5 +16,5 @@ int main()
 
     printf("\nDecrypted text: %s ", encrypted_text);
 
-    return 0;
+    
 }

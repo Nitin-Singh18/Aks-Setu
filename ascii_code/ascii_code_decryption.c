@@ -1,12 +1,14 @@
 #include<stdio.h>
 
-int main()
+void asciiCodeDecryption()
 {
     int ascii_Val[100]={0};   //Array for ascii value
 
-    char a = 's', b = 'S';    //Taken to break the loop
+    char a = 's', b = 'S', escape;    //Taken to break the loop
 
     int i; 
+
+    scanf("%c", &escape);
     
     printf("Enter ascii value for decryption: ");
     
@@ -27,6 +29,6 @@ int main()
         printf("%c", ascii_Val[i]);
     }
     
-    return 0;
+   
 
 }

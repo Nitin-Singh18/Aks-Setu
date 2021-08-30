@@ -68,9 +68,3 @@ void RomanCodeEncryption() {
     
 }
 
-int main() 
-{
-    RomanCodeEncryption();
-    return 0;
-
-}

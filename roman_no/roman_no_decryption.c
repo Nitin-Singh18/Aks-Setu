@@ -59,9 +59,3 @@ void RomanCodeDecryption()
     printf("\n\nEncrypted String : %s", dvar);
 }
 
-int main() 
-{
-    RomanCodeDecryption();
-    return 0;
-
-}

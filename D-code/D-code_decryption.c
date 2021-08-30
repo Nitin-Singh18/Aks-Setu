@@ -53,10 +53,3 @@ void DcodeDecryption()
 
     printf("\n\nEncrypted String : %s", dvar);
 }
-
-int main() 
-{
-    DcodeDecryption();
-    return 0;
-
-}

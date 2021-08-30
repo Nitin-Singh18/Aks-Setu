@@ -1,12 +1,14 @@
 #include<stdio.h>
 
-int main()
+void asciiCodeEncryption()
 {
-    char plain_text[150];
+    char plain_text[150], escape;
 
     int i;
     
     printf("Enter text for encryption: ");
+
+    scanf("%c", &escape);
 
     gets(plain_text);
 
@@ -19,5 +21,5 @@ int main()
         printf(" "); 
     }
     
-    return 0;
+    
 }

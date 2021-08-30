@@ -68,9 +68,3 @@ void PrimeCodeEncryption() {
     
 }
 
-int main() 
-{
-    PrimeCodeEncryption();
-    return 0;
-
-}

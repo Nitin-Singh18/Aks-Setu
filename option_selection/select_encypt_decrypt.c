@@ -22,6 +22,7 @@ int selectEncryptDecrypt() {
         printf("\n\nPlease Enter Correct Keyword !\n\n");
         delay(1);
         selectEncryptDecrypt();
+        delay(1);
     }
 
     return select;

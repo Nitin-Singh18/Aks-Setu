@@ -1,13 +1,15 @@
 #include<stdio.h>
 #include<math.h>
 
-int main()
+void binaryCodeDecryption()
 {
-    int binary_numbers[100] = {0};               //Array for binary numbers
+    int binary_numbers[100] = {0}, escape;               //Array for binary numbers
     
     int i, j;                                    //Variable declared to run loops
     
     int sum = 0, bin_num;
+
+    scanf("%c", &escape);
     
     char a = 's', b = 'S', decrypted_Values;
 
@@ -44,5 +46,4 @@ int main()
         printf("%c", decrypted_Values);
     }
     
-    return 0;
 }

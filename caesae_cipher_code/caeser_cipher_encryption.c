@@ -47,5 +47,4 @@ void caeserCipherEncription()
 
     printf("\nEncrypted text is: %s", plain_text);
     
-    return 0;
 }

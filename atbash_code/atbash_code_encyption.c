@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 
-int main()
+int atbashEncryptionFunction()
 {   
-    char plain_Text[100] = {0}, encrypted_text[100] = {0}, ch;   //Declaration
+    char plain_Text[100] = {0}, encrypted_text[100] = {0}, ch, escape;   //Declaration
     
     char small_letter[27] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' '};
     
@@ -16,6 +16,8 @@ int main()
     char symbol[27] = {'`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '|', '/', ',', '.', '<', '>', '?', '*', '{', '}', '[', ']'};
 
     printf("\nEnter Your Text: ");
+
+    scanf("%c", &escape);
 
     gets(plain_Text);
 

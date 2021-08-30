@@ -2,17 +2,19 @@
 #include<string.h>
 
 
-int main()
+void reverseCodeEncryption()
 {
-    char plain_text[100];
+    char plain_text[100], escape;
 
     printf("Enter text for encryption: ");
     
+    scanf("%c", &escape);
+
     gets(plain_text);
 
     strrev(plain_text);
 
     printf("\nEncrypted text: %s ", plain_text);
 
-    return 0;
+    
 }
