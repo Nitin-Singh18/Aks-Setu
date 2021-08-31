@@ -7,7 +7,7 @@ void showWelcomeMessage() {
     char name[20];
     
 
-    printf("\nWelcome To AKS SETU...\nAKS SETU is an Encryption/Decription tool support 10 type of methods");
+    printf("\nWelcome To Craphy...\nCraphy is an Encryption/Decription tool support 10 type of methods");
    
     delay(1);
 
