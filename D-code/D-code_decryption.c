@@ -51,7 +51,7 @@ void DcodeDecryption()
      }
 
 
-    printf("\n\nEncrypted String : %s", dvar);
+    printf("\n\nDecrypted String : %s", dvar);
 }
 
 
